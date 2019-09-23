@@ -13,10 +13,30 @@
     <header>
         <h1>Temperature Converter</h1>
     </header>
+
     <div class="input-holder">
         <label for="temperatureInput">Enter your temperture here</label>
         <input type="text" id=temperatureInput> 
     </div>
+
+    <div class="button-selection">
+
+        <div class="button-label">
+        <p>Convert temperature to:</p>
+        </div>
+
+        <div class="buttons-holder">
+            <div class="c-button-wrapper">
+                <input class="myrbuttons" type="radio" id="celsius" name="temp-scale" value="celsius">
+                <label for="celsius">Celsius</label>
+            </div>
+            <div class="f-button-wrapper">
+                <input class="myrbuttons" type="radio" id="fahrenheit" name="temp-scale" value="fahrenheit">
+                <label for="fahrenheit">Fahrenheit</label>
+            </div>
+        </div>
+    </div>
+
     <script src="./main.js"></script>
 </body>
 </html>
