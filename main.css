@@ -31,3 +31,7 @@ h1 {
 .c-button-wrapper {
     display: block;
 }
+.convert-button-wrapper {
+    display: flex;
+    justify-content: center;
+}
