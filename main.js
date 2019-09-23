@@ -35,6 +35,15 @@ const determineConverter = (e) => {
     
 }
 
-
 // Assign a function to be executed when the button is clicked
 button.addEventListener("click", determineConverter);
+
+const temp = document.getElementById('temperatureInput');
+temp.addEventListener('keydown', (e) => {
+    //event.preventDefault();
+    if (e.key === 'Enter') {
+        determineConverter(e);
+        console.log('it works');
+    }
+})
+//document.getElementById('temperatureInput').addEventListener("keydown", pressEnter)
