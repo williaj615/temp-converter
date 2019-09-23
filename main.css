@@ -8,3 +8,10 @@ header {
 h1 {
     font-family: 'Squada One', cursive;
 }
+.input-holder {
+    display: flex;
+    justify-content:  center;
+}
+#temperatureInput {
+    margin-left: 1em;
+}
