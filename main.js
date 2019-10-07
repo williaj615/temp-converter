@@ -60,3 +60,8 @@ temp.addEventListener('keydown', (e) => {
     }
   });
 //document.getElementById('temperatureInput').addEventListener("keydown", pressEnter)
+
+const clearField = () => {
+    document.getElementById('temperatureInput').value = '';
+}
+document.getElementById('clear-button').addEventListener("click", clearField);
