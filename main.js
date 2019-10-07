@@ -39,11 +39,10 @@ const determineConverter = (e) => {
 button.addEventListener("click", determineConverter);
 
 const temp = document.getElementById('temperatureInput');
+
 temp.addEventListener('keydown', (e) => {
-    //event.preventDefault();
-    if (e.key === 'Enter') {
-        determineConverter(e);
-        console.log('it works');
+    if(e.keyCode === 13){
+      determineConverter();
     }
-})
+  });
 //document.getElementById('temperatureInput').addEventListener("keydown", pressEnter)
